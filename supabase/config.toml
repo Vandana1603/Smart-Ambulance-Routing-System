@@ -1,0 +1,23 @@
+project_id = "jyqvtkyckreoysydjemd"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[functions.calculate-route]
+verify_jwt = false
+
+[functions.assign-ambulance]
+verify_jwt = false
+
+[functions.create-booking]
+verify_jwt = false
+
+[functions.send-proximity-alerts]
+verify_jwt = false
+
+[functions.notify-hospital]
+verify_jwt = false
